@@ -36,7 +36,21 @@
         </div>
 
     </div>
-  </div>  
+  </div> 
+  <script>
+    const apiKey = "c6fdad53dcf5ad9b3fa5a46e17d3e227";
+    const apiUrl = "";
+
+    async function checkWeather() {
+        const response = await fetch(apiUrl + `&appid=${apiKey}`);
+        var data = await response.json();
+
+        console.log(data);
+    }
+    checkWeather();
+
+
+  </script> 
     
 </body>
 </html>
